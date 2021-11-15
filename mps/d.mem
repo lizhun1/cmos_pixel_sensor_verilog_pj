@@ -1,0 +1,5 @@
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/dut_test_top/mps/shifter2[30]/reader/mem
+// format=bin addressradix=h dataradix=b version=1.0 wordsperline=4
+@0 000000101100000 000000101100000 000000101100000 000000101100000
+@4 000000101100000 000000101100000 000000101101101 0000001zzzzzzzz

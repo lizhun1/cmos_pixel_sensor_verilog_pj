@@ -1,0 +1,51 @@
+C:/Users/lizhun/Desktop/sourcefile/router_test_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/router_test_top.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module router_test_top
+
+Top level modules:
+	router_test_top
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/router.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/router.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module router
+-- Compiling module rtslice
+-- Compiling module rtslicef
+
+Top level modules:
+	router
+	rtslicef
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/router_test.h {1 {sccom -work work -stats=none C:/Users/lizhun/Desktop/sourcefile/router_test.h
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/router_io.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/router_io.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling interface router_io
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/test.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/test.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling program test
+-- Importing package router_test_pkg
+
+Top level modules:
+	test
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv(8): Invalid type 'Packet'. Please check the type of the variable 'pkt2cmp'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv(16): (vlog-2730) Undefined variable: 'TRACE_ON'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv(19): (vlog-2730) Undefined variable: 'pkt2cmp'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv(24): (vlog-2730) Undefined variable: 'TRACE_ON'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/ReceiverBase.sv(32): (vlog-2730) Undefined variable: 'TRACE_ON'.
+
+} {3.0 8.0} {}} C:/Users/lizhun/Desktop/sourcefile/router_test_pkg.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/router_test_pkg.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling package router_test_pkg
+** Warning: Environment.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+
+Top level modules:
+	--none--
+
+} {} {}}

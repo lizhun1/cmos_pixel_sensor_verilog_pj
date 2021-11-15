@@ -1,0 +1,111 @@
+module pixel_encoder128(state,read,addr,valid,reset,reset_pe,en,clk,readout,clkout,full);
+
+input [127:0] state;
+input clk;
+input clkout;
+input readout;
+input read;
+input reset_pe;
+input en;
+output [7:0] addr;
+output [127:0] reset;
+output valid;
+output full;
+
+wire [127:0] state;
+wire clk;
+wire read;
+wire reset_pe;
+wire en;
+reg [7:0] addr;
+reg full;
+wire valid;
+wire [127:0] reset;
+
+
+reg [15:0] read_p;
+wire [3:0] addr_p[15:0];
+wire [15:0] valid_p;
+wire [15:0] clk_p;
+reg [15:0] reset_p;
+
+reg [3:0] state_m;
+reg [3:0] mem[127:0];
+reg [2:0] pointer;
+reg [6:0] readpointer;
+
+assign valid=valid_p[15]|valid_p[14]|valid_p[13]|valid_p[12]|valid_p[11]|valid_p[10]|valid_p[9]|valid_p[8]|valid_p[7]|valid_p[6]|valid_p[5]|valid_p[4]|valid_p[3]|valid_p[2]|valid_p[1]|valid_p[0];
+
+genvar j;
+generate
+	for(j=0;j<16;j=j+1)
+		begin: shifter3
+			assign clk_p[j]=clk; 
+		end
+endgenerate
+
+ genvar i;
+ generate 
+	for(i=0;i<16;i=i+1)
+		begin:shifter
+			pro_encoder83 pro(	state[7+i*8:0+i*8],
+								read_p[i],
+								reset[7+i*8:i*8],
+								addr_p[i],
+								valid_p[i],
+								clk_p[i],
+								reset_p[i] );
+		end
+endgenerate
+
+always@(posedge clk)
+	begin
+		if(en)
+			if(reset_pe)
+				begin
+					pointer<=3'b000;
+					reset_p<=16'b1111111111111111;
+					read_p<=16'b0;
+				end
+			if(read) 
+				begin
+					if(full==0)
+						begin
+							read_p<=16'b1111111111111111;
+							pointer<=pointer+1;
+						end
+				end
+	end
+always@(pointer)
+	begin
+		mem[pointer]<=addr_p[0];
+		mem[pointer+8]<=addr_p[1];
+		mem[pointer+2*8]<=addr_p[2];
+		mem[pointer+3*8]<=addr_p[3];
+		mem[pointer+4*8]<=addr_p[4];
+		mem[pointer+5*8]<=addr_p[5];
+		mem[pointer+6*8]<=addr_p[6];
+		mem[pointer+7*8]<=addr_p[7];
+		mem[pointer+8*8]<=addr_p[8];
+		mem[pointer+9*8]<=addr_p[9];
+		mem[pointer+10*8]<=addr_p[10];
+		mem[pointer+11*8]<=addr_p[11];
+		mem[pointer+12*8]<=addr_p[12];
+		mem[pointer+13*8]<=addr_p[13];
+		mem[pointer+14*8]<=addr_p[14];
+		mem[pointer+15*8]<=addr_p[15];
+		if(pointer==3'b111) full<=1;
+		
+	end
+always@(posedge clkout or reset_pe)
+	begin
+		if(full)
+			if(readout)
+				readpointer<=readpointer+1;
+				addr[3:0]<=mem[readpointer];
+				addr[7:4]<=readpointer[6:3];
+		if(reset_pe)
+			readpointer<=7'b0;
+	end
+
+endmodule

@@ -1,0 +1,9 @@
+module pixelcell(hit,reset,state);
+ input hit;
+ input reset;
+ output state;
+ wire hit;
+ wire reset;
+ reg state;
+ always state=hit&(~reset);
+ endmodule

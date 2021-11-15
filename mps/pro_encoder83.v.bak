@@ -1,0 +1,81 @@
+module pro_encoder83(state,read,reset,addr,valid);
+
+	input [7:0] state;
+	input read;
+	output [2:0]addr;
+	output [7:0]reset;
+	output valid;
+	
+	wire [7:0] state;
+	wire read;
+	reg [2:0] addr;
+	reg [7:0] reset=8'b0;
+	wire valid;
+	assign valid=state[7]|state[6]|state[5]|state[4]|state[3]|state[2]|state[1]|state[0];
+	always@(posedge read)
+		begin
+			if(state[7]) 
+				begin
+					addr<=3'b111;
+					reset[7]<=1;
+				end
+			else
+				begin
+					if(state[6]) 
+						begin
+							addr<=3'b110;
+							reset[6]<=1;
+						end
+					else
+						begin
+							if(state[5]) 
+								begin
+									addr<=3'b101;
+									reset[5]<=1;
+								end
+							else
+								begin 
+									if(state[4]) 
+										begin	
+											addr<=3'b100;
+											reset[4]<=1;
+										end
+									else
+										begin
+											if(state[3]) 
+												begin
+													addr<=3'b011;
+													reset[3]<=1;
+												end
+											else
+												begin
+													if(state[2]) 
+														begin
+															addr<=3'b010;
+															reset[2]<=1;
+														end
+													else
+														begin
+															if(state[1]) 
+																begin
+																	addr<=3'b001;
+																	reset[1]<=1;
+																end
+															else
+																begin
+																	if(state[0]) 
+																		begin
+																			addr<=3'b000;
+																			reset[0]<=1;
+																		end
+																	else reset<=0;
+																end
+														end
+												end
+										end
+								end
+						end
+				end			
+		end
+
+endmodule

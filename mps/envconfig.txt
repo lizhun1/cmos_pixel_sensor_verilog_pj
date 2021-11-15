@@ -1,0 +1,3 @@
+readbmp=0;
+packets=01;
+den=020;

@@ -1,0 +1,194 @@
+C:/Users/lizhun/Desktop/sourcefile/inv.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/inv.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} C:/Users/lizhun/Desktop/??/source/IMAGEGEN.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/??/source/IMAGEGEN.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+** Warning: C:/Users/lizhun/Desktop/文档/source/IMAGEGEN.sv(93): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+
+** Warning: C:/Users/lizhun/Desktop/文档/source/IMAGEGEN.sv(98): (vlog-2240) Treating stand-alone use of function 'custom' as an implicit VOID cast.
+
+** Warning: C:/Users/lizhun/Desktop/文档/source/IMAGEGEN.sv(99): (vlog-2240) Treating stand-alone use of function 'copy' as an implicit VOID cast.
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/time_mod.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/time_mod.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module time_mod
+
+Top level modules:
+	time_mod
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/dut_test.h {1 {sccom -work work -stats=none C:/Users/lizhun/Desktop/sourcefile/dut_test.h
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/Scoreboard.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/Scoreboard.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:/Users/lizhun/Desktop/sourcefile/Scoreboard.sv(7): Invalid type 'Packet'. Please check the type of the variable 'pkt2send'.
+** Error: (vlog-13069) C:/Users/lizhun/Desktop/sourcefile/Scoreboard.sv(7): near "[": syntax error, unexpected '[', expecting function or task or "SystemVerilog keyword 'pure'".
+
+} {3.0 5.0} {}} C:/Users/lizhun/Desktop/sourcefile/Receiver.sv {0 {vlog -work work -vopt -sv -stats=none {C:\Users\lizhun\Desktop\sourcefile\Receiver.sv}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:\Users\lizhun\Desktop\sourcefile\Receiver.sv(6): Invalid type 'pkt_mbox'. Please check the type of the variable 'out_box'.
+** Error: C:\Users\lizhun\Desktop\sourcefile\Receiver.sv(8): Invalid type 'Packet'. Please check the type of the variable 'pkt2cmp'.
+** Error: (vlog-13069) C:\Users\lizhun\Desktop\sourcefile\Receiver.sv(8): near "[": syntax error, unexpected '[', expecting function or task or "SystemVerilog keyword 'pure'".
+
+} {3.0 6.0} {}} C:/Users/lizhun/Desktop/??/source/test.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/??/source/test.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling program test
+** Error: C:/Users/lizhun/Desktop/文档/source/test.sv(8): A default clocking block must be specified to use the ##n timing statement.
+
+} {4.0 5.0} {}} C:/Users/lizhun/Desktop/??/source/interface.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/??/source/interface.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling interface dut_io
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/Generator.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/Generator.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:/Users/lizhun/Desktop/sourcefile/Generator.sv(8): Invalid type 'Packet'. Please check the type of the variable 'pkt2send'.
+** Error: (vlog-13069) C:/Users/lizhun/Desktop/sourcefile/Generator.sv(8): near "[": syntax error, unexpected '[', expecting function or task or "SystemVerilog keyword 'pure'".
+
+} {3.0 5.0} {}} C:/Users/lizhun/Desktop/sourcefile/pixel.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/pixel.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module pixelcell
+
+Top level modules:
+	pixelcell
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/test.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/test.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling program test
+-- Importing package dut_test_pkg
+
+Top level modules:
+	test
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/Packet.sv {2 {vlog -work work -vopt -sv -stats=none {C:\Users\lizhun\Desktop\sourcefile\Packet.sv}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Warning: C:\Users\lizhun\Desktop\sourcefile\Packet.sv(174): (vlog-2897) Using non-standard foreach loop variable list syntax.
+-- Compiling package Packet_sv_unit
+** Warning: C:\Users\lizhun\Desktop\sourcefile\Packet.sv(174): (vlog-2897) Using non-standard foreach loop variable list syntax.
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/pro_encoder83.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/pro_encoder83.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module pro_encoder83
+
+Top level modules:
+	pro_encoder83
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/debugexe.sv {2 {vlog -work work -vopt -sv -covercells -cover sbcef3 -stats=none C:/Users/lizhun/Desktop/sourcefile/debugexe.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Warning: ** while parsing file included at C:/Users/lizhun/Desktop/sourcefile/debugexe.sv(1)
+** at Packet.sv(174): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: Packet.sv(3): (vlog-13233) Design unit "debugexe_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package debugexe_sv_unit
+** Warning: Packet.sv(174): (vlog-2897) Using non-standard foreach loop variable list syntax.
+-- Compiling program debug
+
+Top level modules:
+	debug
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/pixel_encoder128.v {1 {vlog -work work -vopt -stats=none {C:\Users\lizhun\Desktop\sourcefile\pixel_encoder128.v}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module pixel_encoder128
+
+Top level modules:
+	pixel_encoder128
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/test_top.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\lizhun\Desktop\sourcefile\test_top.sv}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module dut_test_top
+
+Top level modules:
+	dut_test_top
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/dut.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/dut.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module dut_top
+
+Top level modules:
+	dut_top
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/mod_top_tb.v {1 {vlog -work work -vopt -stats=none {C:\Users\lizhun\Desktop\sourcefile\mod_top_tb.v}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module tb_top_mod
+
+Top level modules:
+	tb_top_mod
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/Driver.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/Driver.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:/Users/lizhun/Desktop/sourcefile/Driver.sv(8): Invalid type 'Packet'. Please check the type of the variable 'pkt2send'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Driver.sv(9): Invalid type 'pkt_mbox'. Please check the type of the variable 'in_box'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Driver.sv(10): Invalid type 'pkt_mbox'. Please check the type of the variable 'out_box'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Driver.sv(16): (vlog-2400) Identifier ('pkt_mbox') found where a type or type identifier is required.
+
+} {3.0 7.0} {}} C:/Users/lizhun/Desktop/sourcefile/dut_test_pkg.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/dut_test_pkg.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling package dut_test_pkg
+** Warning: ** while parsing file included at C:/Users/lizhun/Desktop/sourcefile/dut_test_pkg.sv(5)
+** at Packet.sv(174): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: Generator.sv(47): (vlog-2875) Task "readbmp" is being called in function "new".
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/Environment.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/lizhun/Desktop/sourcefile/Environment.sv
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+** Error: C:/Users/lizhun/Desktop/sourcefile/Environment.sv(9): Invalid type 'Driver'. Please check the type of the variable 'drvr'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Environment.sv(10): Invalid type 'Receiver'. Please check the type of the variable 'rcvr'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Environment.sv(11): Invalid type 'Generator'. Please check the type of the variable 'gen'.
+** Error: C:/Users/lizhun/Desktop/sourcefile/Environment.sv(12): Invalid type 'Scoreboard'. Please check the type of the variable 'sb'.
+
+} {3.0 7.0} {}} C:/Users/lizhun/Desktop/sourcefile/testtb_83.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/testtb_83.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module tb_top83
+
+Top level modules:
+	tb_top83
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/dcol_reader_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/dcol_reader_tb.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module tb_top_dcol
+
+Top level modules:
+	tb_top_dcol
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/testb.v {1 {vlog -work work -vopt -stats=none C:/Users/lizhun/Desktop/sourcefile/testb.v
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/mod_top.v {1 {vlog -work work -vopt -stats=none {C:\Users\lizhun\Desktop\sourcefile\mod_top.v}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module mod_top
+
+Top level modules:
+	mod_top
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/interface.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\lizhun\Desktop\sourcefile\interface.sv}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling interface dut_io
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/lizhun/Desktop/sourcefile/FIFO.v {1 {vlog -work work -vopt -stats=none {C:\Users\lizhun\Desktop\sourcefile\FIFO.v}
+Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module FIFO
+
+Top level modules:
+	FIFO
+
+} {} {}}

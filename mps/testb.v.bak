@@ -1,0 +1,29 @@
+`timescale 1ns/1ps
+module tb_top;
+reg clk;
+reg clkout;
+reg [127:0] state;
+reg read;
+reg en;
+reg readout;
+
+wire [127:0] reset;
+wire reset_pe;
+wire full;
+wire valid;
+wire [7:0]addr;
+module pixel_encoder128(state,read,addr,valid,reset,reset_pe,en,clk,readout,clkout,full);
+initial
+	begin
+		state<=127'b11111111;
+		clk=0;
+		clkout=0;
+		read=1'b1;
+		readout=1'b1;
+		en=1'b1;
+		reset_pe=1'b1;
+		#200 reset_pe=1'b0;
+	end
+always #100 clk=~clk;
+always #200 clkout=~clkout;
+endmodule

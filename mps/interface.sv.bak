@@ -1,0 +1,27 @@
+`define width 64
+`define length 64
+`define datasize 18
+
+interface dut_io(input bit clock);
+logic [`width-1:0] hitin[`length-1:0];
+logic valid;
+logic read;
+logic reset;
+logic [`datasize-1:0] addr;
+logic clk;
+logic empty;
+
+default clocking cb@(posedge clock);
+output hitin;
+output reset;
+input read;
+input clk;
+output valid;
+output addr;
+output empty;
+
+endclocking:cb
+
+modport TB(clocking cb);
+
+endinterface:dut_io

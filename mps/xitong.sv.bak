@@ -1,0 +1,8 @@
+program automatic system();
+int a;
+initial
+	begin
+		$system("time /t >> seed.txt");
+		$display("%d",a);
+	end
+endprogram

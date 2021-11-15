@@ -1,0 +1,8 @@
+# output
+run -all
+# Break key hit
+# Break in Module pro_encoder83 at C:/Users/lizhun/Desktop/sourcefile/pro_encoder83.v line 25
+break
+# invoked "break" outside of a loop
+# End time: 12:17:42 on May 10,2021, Elapsed time: 0:04:24
+# Errors: 137, Warnings: 0
